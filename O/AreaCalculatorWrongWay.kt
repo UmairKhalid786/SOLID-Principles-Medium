@@ -1,10 +1,7 @@
-//package com.example.a2by3_android
-//
-//
-///**
-// * Created by Umair on 08,August,2021
-// */
-//
+**
+* Created by Umair on 08,August,2021
+*/
+
 class AreaCalculator {
 
     fun calculateArea(shapes : List<Shape>) = shapes.sumOf {
