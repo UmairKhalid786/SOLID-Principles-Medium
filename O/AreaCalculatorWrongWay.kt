@@ -1,10 +1,4 @@
-//package com.example.a2by3_android
-//
-//
-///**
-// * Created by Umair on 08,August,2021
-// */
-//
+
 class AreaCalculator {
 
     fun calculateArea(shapes : List<Shape>) = shapes.sumOf {
@@ -12,6 +6,8 @@ class AreaCalculator {
             it.side * it.side
         else if (it  is Circle)
             (it.radius * it.radius * Math.PI).toInt()
+        else if (it  is Rectangle)
+            it.width * it.height
         else
             0
     }
@@ -19,6 +15,7 @@ class AreaCalculator {
 
 class Square(val side : Int) : Shape
 class Circle(val radius : Int) : Shape
+class Rectangle(val width : Int, val height : Int) : Shape
 
 //Shape interface
 interface Shape
